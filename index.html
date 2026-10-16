@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free AI App Security Checker | NoCode Security Scanner</title>
+  <meta name="description" content="Built an app with Lovable or Bolt? Check your app for potential security issues and get an easy-to-understand report with recommendations to help you fix them.">
+  <link rel="icon" type="image/png" href="icons/icon-128.png">
+  <link rel="stylesheet" href="popup/theme.css">
+  <style>
+    /* Home page for the public site (GitHub Pages). Uses the extension's theme tokens only. */
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--font-sans); color: var(--ink); background: var(--ground); line-height: 1.6; }
+    a { color: var(--brand-ink); }
+    .hero { background: radial-gradient(90% 80% at 85% 10%, #0B3577 0%, transparent 60%), var(--brand-gradient); color: var(--on-brand); }
+    .wrap { max-width: 960px; margin: 0 auto; padding-inline: 20px; }
+    .hero .wrap { padding-block: 56px 64px; display: grid; gap: 22px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 18px; }
+    .brand img { width: 44px; height: 44px; background: #fff; border-radius: 12px; padding: 6px; }
+    .tag { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+    .tag::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); margin-right: 8px; }
+    h1 { margin: 0; font-size: clamp(32px, 5.5vw, 52px); line-height: 1.06; letter-spacing: -0.025em; text-wrap: balance; max-width: 16ch; }
+    .hero p { margin: 0; font-size: 19px; color: #C8D4EE; max-width: 52ch; }
+    .cta { display: inline-block; justify-self: start; background: #fff; color: var(--brand); font-weight: 700; padding: 13px 22px; border-radius: 999px; text-decoration: none; }
+    main .wrap { padding-block: 48px; display: grid; gap: 36px; }
+    h2 { margin: 0 0 12px; font-size: 24px; letter-spacing: -0.01em; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; gap: 6px; }
+    .card b { font-size: 16px; }
+    .card span { color: var(--muted); font-size: 15px; }
+    ol { margin: 0; padding-left: 20px; display: grid; gap: 8px; max-width: 64ch; }
+    footer { border-top: 1px solid var(--line); background: var(--surface); }
+    footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; gap: 10px 26px; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand"><img src="icons/icon-128.png" alt="">NoCode Security Scanner</div>
+      <span class="tag">Free Quick Scan</span>
+      <h1>Is your AI-built app safe to launch?</h1>
+      <p>Built an app with Lovable or Bolt? Check your app for potential security issues and get an easy-to-understand report with recommendations to help you fix them.</p>
+      <a class="cta" href="#how">How it works</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section>
+        <h2>What it checks</h2>
+        <div class="grid">
+          <div class="card"><b>Leaked keys and secrets</b><span>Real credentials committed to your code.</span></div>
+          <div class="card"><b>Open databases</b><span>Missing or too-open Supabase access rules.</span></div>
+          <div class="card"><b>Unprotected functions</b><span>Server code that trusts whoever calls it.</span></div>
+        </div>
+      </section>
+      <section id="how">
+        <h2>How it works</h2>
+        <ol>
+          <li>Install the NoCode Security Scanner extension for Chrome and sign in with Google.</li>
+          <li>Connect GitHub or Azure DevOps with read-only access. We never change your code.</li>
+          <li>Pick a repository and branch and run your free Quick Scan. It takes a few minutes.</li>
+          <li>Get a report where every confirmed issue shows the line of your code that proves it, with a fix.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Yaane Technologies</span>
+      <a href="legal/privacy.html">Privacy Policy</a>
+      <a href="legal/terms.html">Terms of Service</a>
+      <span>Support: devgysolutions@gmail.com</span>
+      <span>Privacy and security: nocodefinishers@gmail.com</span>
+    </div>
+  </footer>
+</body>
+</html>
